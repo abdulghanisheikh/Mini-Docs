@@ -5,16 +5,22 @@ import "./foreground.css";
 import { RxCross2 } from "react-icons/rx";
 
 const Foreground=()=>{
-  const [data,setData]=useState([]);
-  const [showForm,setShowForm]=useState(false);
-  const [desc,setDesc]=useState("");
-  const [fileSize,setFileSize]=useState("");
-  const [close,setClose]=useState(false);
-  const [tagOpen,setTagOpen]=useState(false);
-  const [tagTitle,setTagTitle]=useState("");
-  const [tagColor,setTagColor]=useState("");
-  const foregroundRef=useRef(null);
-  const [filled,setFilled]=useState(false);
+    const [data,setData]=useState([]);
+    const [showForm,setShowForm]=useState(false);
+    const [desc,setDesc]=useState("");
+    const [fileSize,setFileSize]=useState(0);
+    const [close,setClose]=useState(false);
+    const [tagOpen,setTagOpen]=useState(false);
+    const [tagTitle,setTagTitle]=useState("");
+    const [tagColor,setTagColor]=useState("");
+    const foregroundRef=useRef(null);
+    const [filled,setFilled]=useState(false);
+
+  const getSize=(desc)=>{
+    const bytes=new TextEncoder().encode(desc).length;
+    const kb=bytes/1024;
+    return kb.toFixed(2);
+  }
 
   const generateDocs=()=>{
     const info={
@@ -66,8 +72,8 @@ const Foreground=()=>{
       })
     )}
 
-      <button onClick={toggleForm} className="absolute bottom-15 left-[50%] rounded-full hover:scale-110 ease-in-out duration-250 active:scale-100 cursor-pointer bg-zinc-300">
-        {showForm?<RxCross2 size='3em' color='black'/>:<IoMdAdd size='3em' color='black'/>}
+      <button onClick={toggleForm} className="absolute active:animate-spin active:duration-[2s] bottom-15 left-[50%] rounded-full hover:scale-110 ease-in-out duration-250 active:scale-100 cursor-pointer bg-zinc-300">
+        {showForm?<RxCross2 size='3em' color='zinc'/>:<IoMdAdd size='3em' color='zinc'/>}
       </button>
 
     {showForm&&(<div id='cardForm' className='bg-zinc-900/80 text-white rounded-xl h-fit w-fit p-10 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%]'>
@@ -75,15 +81,11 @@ const Foreground=()=>{
         <div className='flex justify-around gap-5'>
           <label>
           Description:
-          <textarea className='border-1 leading-3 p-2' name="desc" rows={3} placeholder='Enter desc here' value={desc} required onChange={(event)=>{
+          <textarea className='border-1 leading-3 rounded-xl py-1 px-2' name="desc" rows={3} placeholder='Enter desc here' value={desc} required onChange={(event)=>{
+            let fileSize=getSize(event.target.value);
+            setFileSize(fileSize);
             setDesc(event.target.value);
           }}></textarea>
-          </label>
-          <label>
-            File size:
-            <input type="text" className='border-1' required value={fileSize} onChange={(event)=>{
-              setFileSize(event.target.value);
-            }}/>
           </label>
           <label>
             Close:
@@ -102,7 +104,7 @@ const Foreground=()=>{
               <>
               <label>
                 Tag title:
-                <input type="text" className='border-1' required value={tagTitle} onChange={(event)=>{
+                <input type="text" className='border-1 rounded-xl py-1 px-2' required value={tagTitle} onChange={(event)=>{
                   setTagTitle(event.target.value);
                 }}/>
               </label>

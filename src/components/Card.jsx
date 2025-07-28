@@ -11,7 +11,7 @@ const Card=({data,reference})=>{
             <p className='text-sm leading-tight mt-2 font-semibold'>{data.desc}</p>
             <div className='footer absolute bottom-0 w-full left-0'>
                 <div className='flex justify-between mb-2 px-4 py-3'>
-                    {data.fileSize}
+                    {data.fileSize}kb
                     <span className='flex justify-center items-center w-6 h-6 bg-zinc-300 rounded-full'>
                         {data.close?<MdOutlineClose color='black'/>:<LuDownload size="0.9em" color='black'/>}
                     </span>
