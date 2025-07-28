@@ -8,7 +8,7 @@ const Card=({data,reference})=>{
     return(
         <motion.div drag dragConstraints={reference} whileDrag={{scale:1.2}} className='relative flex-shrink-0 w-60 h-75 rounded-[45px] m-3 bg-zinc-900/90 px-7 py-10 text-white overflow-hidden'>
             <FaFileAlt/>
-            <p className='text-sm leading-tight mt-5 font-semibold'>{data.desc}</p>
+            <p className='text-sm leading-tight mt-2 font-semibold'>{data.desc}</p>
             <div className='footer absolute bottom-0 w-full left-0'>
                 <div className='flex justify-between mb-2 px-4 py-3'>
                     {data.fileSize}
@@ -16,7 +16,7 @@ const Card=({data,reference})=>{
                         {data.close?<MdOutlineClose color='black'/>:<LuDownload size="0.9em" color='black'/>}
                     </span>
                 </div>
-                {data.tag.isOpen&&(<div className={`tag w-full py-4 text-center ${data.tag.tagColor==="blue"?'bg-blue-600':'bg-green-600'} flex justify-center items-center`}>
+                {data.tag.tagOpen&&(<div className={`tag w-full py-4 text-center ${data.tag.tagColor==='blue'?'bg-blue-600':'bg-green-600'} flex justify-center items-center`}>
                     <h3 className='font-semibold text-sm'>{data.tag.tagTitle}</h3>
                 </div>)}
             </div>

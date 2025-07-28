@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id='cardDetails'>
+        <label>
+          Description:
+          <textarea name="desc" rows={3} placeholder='Enter desc here' required></textarea>
+        </label>
+        <label>
+          File size:
+          <input type="text" required/>
+        </label>
+        <label>
+          Close:
+          <input type="checkbox" name='close'/>
+        </label>
+        <fieldset>
+          <legend>Tag</legend>
+          <label>
+            isOpen:
+            <input type="checkbox" checked/>
+          </label>
+          <label>
+            Tag title:
+            <input type="text" value='Download now' required/>
+          </label>
+          <label>
+            Tag Color:
+            <select name="tagColor">
+              <option value="green" selected>Green</option>
+              <option value="blue">Blue</option>
+            </select>
+          </label>
+        </fieldset>
+      </form>
+      
+</body>
+</html>
