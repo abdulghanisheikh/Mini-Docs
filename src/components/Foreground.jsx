@@ -64,11 +64,19 @@ const Foreground=()=>{
     setClose(prev=>!prev);
   }
 
+  const deleteHandler=(id)=>{
+    const copyArray=[...data];
+    copyArray.splice(id,1);
+    setData(copyArray);
+  }
+
   return (
     <div ref={foregroundRef} className="relative z-[3] w-full h-full flex gap-3 flex-wrap p-5">
     {filled&&(
       data.map((item,id)=>{
-        return <Card data={item} key={id} reference={foregroundRef}/>
+        return <Card data={item} key={id} deleteCard={()=>{
+          return deleteHandler(id);
+        }} reference={foregroundRef}/>
       })
     )}
 
