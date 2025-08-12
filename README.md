@@ -40,14 +40,18 @@ The app uses **Framer Motion** to enable smooth draggable functionality, making 
 
 ---
 
+## 🔮 Future Improvements
+- 🖊️ **Edit Doc Content** – Ability to write and edit text inside documents.
+- 🎨 **Custom Styling** – Different colors and themes for docs.
+- 📦 **Persistence** – Save and load docs from local storage or a backend.
+- 📱 **Mobile Enhancements** – Improve touch dragging for mobile devices.
+- 👥 **Multi-user Support** – Real-time collaboration.
+
+---
+
 ## 👨‍💻 Author
 
 **Abdul Ghani**  
 *Web Developer*  
 - 💼 **GitHub:** [YourGitHubUsername](https://github.com/abdulghanisheikh)  
 - 📧 **Email:** ghanisheikh26@gmail.com
-
----
-
-LICENSE
-
