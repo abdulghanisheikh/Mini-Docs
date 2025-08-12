@@ -25,7 +25,7 @@ The app uses **Framer Motion** to enable smooth draggable functionality, making 
 
 ## 🛠 Tech Stack
 
-- **React.js** – Frontend framework  
+- **React.js** – Frontend library  
 - **Framer Motion** – Drag & animation support  
 - **TailwindCSS** – Custom styling  
 
