@@ -49,10 +49,5 @@ The app uses **Framer Motion** to enable smooth draggable functionality, making 
 
 ---
 
-
-Now the **MIT License** text is stored in `LICENSE` file, and the README directly links to it.  
-
-If you want, I can also **generate professional GIFs of your app's drag and delete features** so you can replace those placeholder paths in the README with real visuals. That will make your GitHub page pop.  
-
-Do you want me to prepare that GIF-making guide for you?
+LICENSE
 
