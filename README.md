@@ -20,7 +20,7 @@ The app uses **Framer Motion** to enable smooth draggable functionality, making 
 | Create & Drag Docs | Delete Docs |
 |--------------------|-------------|
 <img width="1907" height="863" alt="Screenshot 2025-08-12 153904" src="https://github.com/user-attachments/assets/ef2bd1f2-7aec-460e-86c9-16aef9865887" />
-(<img width="1917" height="867" alt="Screenshot 2025-08-12 153920" src="https://github.com/user-attachments/assets/4532a3e4-e656-4c9e-bab6-03af32ef23ec" />
+<img width="1917" height="867" alt="Screenshot 2025-08-12 153920" src="https://github.com/user-attachments/assets/4532a3e4-e656-4c9e-bab6-03af32ef23ec" />
 
 
 ## 🛠 Tech Stack
