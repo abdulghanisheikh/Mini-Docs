@@ -38,12 +38,16 @@ The app uses **Framer Motion** to enable smooth draggable functionality, making 
    git clone https://github.com/yourusername/mini-docs.git
    cd mini-docs
 
+---
+
 ## 👨‍💻 Author
 
 **Abdul Ghani**  
 *Web Developer*  
 - 💼 **GitHub:** [YourGitHubUsername](https://github.com/abdulghanisheikh)  
 - 📧 **Email:** ghanisheikh26@gmail.com
+
+---
 
 
 Now the **MIT License** text is stored in `LICENSE` file, and the README directly links to it.  
