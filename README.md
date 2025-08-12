@@ -1,12 +1,40 @@
-# React + Vite
+# 📄 Mini Docs
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**Mini Docs** is a simple and interactive React application that allows you to create, display, drag, and delete mini documents on your screen.  
+The app uses **Framer Motion** to enable smooth draggable functionality, making it easy to organize your documents anywhere on the screen.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Features
 
-## Expanding the ESLint configuration
+- 🆕 **Create Docs** – Add a new mini doc with a description and details.  
+- 🗑 **Delete Docs** – Remove any doc instantly.  
+- 🎯 **Draggable UI** – Drag documents around the screen using **Framer Motion** for a smooth experience.  
+- 📂 **Upload Button** – (Optional) Button available for future file upload integration.  
+- 🖤 **Modern UI** – Minimal dark-themed design for a clean look.  
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Demo Previews
+
+| Create & Drag Docs | Delete Docs |
+|--------------------|-------------|
+|(<img width="1907" height="863" alt="Screenshot 2025-08-12 153904" src="https://github.com/user-attachments/assets/ef2bd1f2-7aec-460e-86c9-16aef9865887" />
+) |(<img width="1917" height="867" alt="Screenshot 2025-08-12 153920" src="https://github.com/user-attachments/assets/4532a3e4-e656-4c9e-bab6-03af32ef23ec" />
+) |
+
+
+## 🛠 Tech Stack
+
+- **React.js** – Frontend framework  
+- **Framer Motion** – Drag & animation support  
+- **TailwindCSS** – Custom styling  
+
+---
+
+## 📦 Installation
+
+1. **Clone the repository**  
+   ```bash
+   git clone https://github.com/yourusername/mini-docs.git
+   cd mini-docs
